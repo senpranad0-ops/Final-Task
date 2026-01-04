@@ -187,32 +187,7 @@ footer {
 }
 
 /* ===== Responsive Design ===== */
-@media (max-width: 768px) {
 
-    header h1 {
-        font-size: 1.8rem;
-    }
-
-    nav ul {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    section {
-        margin: 20px 10px;
-    }
-}
-
-@media (max-width: 480px) {
-
-    header h1 {
-        font-size: 1.6rem;
-    }
-
-    header p {
-        font-size: 0.9rem;
-    }
-}
 .hero-image {
     position: relative;
 }
@@ -295,4 +270,66 @@ a:hover {
 .section-visible {
     opacity: 1;
     transform: translateY(0);
+}
+@media (max-width: 768px) {
+
+    #main-header {
+        flex-direction: column;
+        height: auto;
+        padding: 10px 14px;
+        gap: 6px;
+    }
+
+    .header-nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .header-nav a {
+        margin-left: 0;
+        font-size: 0.9rem;
+    }
+}
+@media (max-width: 768px) {
+
+    /* HERO LAYOUT FIX */
+    .hero {
+        grid-template-columns: 1fr;   /* stack vertically */
+        text-align: center;
+        padding: 100px 20px 40px;
+        min-height: auto;
+    }
+
+    .hero-text h1 {
+        font-size: 2rem;
+        line-height: 1.2;
+    }
+
+    .hero-text h3 {
+        font-size: 1.1rem;
+    }
+
+    .hero-text p {
+        font-size: 0.95rem;
+    }
+
+    /* HERO IMAGE FIX */
+    .hero-image {
+        margin-top: 24px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .hero-image img {
+        width: 150px;
+    }
+}
+@media (max-width: 768px) {
+
+    section {
+        margin: 20px 12px;
+        padding: 16px;
+    }
 }
